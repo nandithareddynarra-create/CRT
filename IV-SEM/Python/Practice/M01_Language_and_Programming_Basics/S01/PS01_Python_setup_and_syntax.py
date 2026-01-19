@@ -1,2 +1,2 @@
-user_name = "Nanditha N"
+user_name = "NandithaN"
 print(user_name)
