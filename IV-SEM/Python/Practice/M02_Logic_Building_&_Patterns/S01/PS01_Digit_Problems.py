@@ -40,11 +40,19 @@
 #     n = n//10
 # print(even,odd)
 '''print the largest digit of a number?'''
-n = int(input())
-lar = 0
-while n > 0:
-    d = n%10
-    if d>lar:
-        lar = d
-    n = n//10
-print(lar)
+# n = int(input())
+# lar = 0
+# while n > 0:
+#     d = n%10
+#     if d>lar:
+#         lar = d
+#     n = n//10
+# print(lar)
+
+'''Reversing a digit by converting into string'''
+# n = int(input())
+# if n<0:
+#     n = -1*n
+#     print(-1*int(str(n)[::-1]))
+# else:
+#     print(str(n)[::-1])
