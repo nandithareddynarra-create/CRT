@@ -1,14 +1,11 @@
-def Student_Grade_System(name:str,n1: int,n2: int,n3: int) -> str:
-    avg = (n1 + n2 + n3) / 3
-    avg_str = format(avg, ".2f").rstrip("0").rstrip(".")
-    if avg >= 40:
-        status = "Pass"
-    else:
-        status = "fail"
+def Reverse_String(s: str) -> str:
+    reversed_str = ""
+    for i in range(len(s) - 1, -1, -1):
+        reversed_str += s[i]
+    
+    return reversed_str
 
-    return f"Average grade: {avg_str}, Status: {status}"
 
 if __name__ == '__main__':
-    name = input()
-    n1,n2,n3 = list(map(int,input().split()))
-    print(Student_Grade_System(name,n1,n2,n3))
+    s = input()
+    print(Reverse_String(s))

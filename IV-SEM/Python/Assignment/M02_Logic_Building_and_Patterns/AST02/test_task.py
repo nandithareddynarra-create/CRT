@@ -1,16 +1,16 @@
 import unittest
-from task import Student_Grade_System
+from task import Reverse_String
 
 class TestAssignment(unittest.TestCase):
 
-    def test1(self):
-        self.assertEqual(Student_Grade_System("abc",50,50,50), "Average grade: 50.0, Status: Pass")
+    def test_single_digit(self):
+        self.assertEqual(Reverse_String("hello"), "olleh")
 
-    def test2(self):
-        self.assertEqual(Student_Grade_System("xyz",12,34,10), "Average grade: 18.66, Status: fail")
+    def test_multiple_digits(self):
+        self.assertEqual(Reverse_String("world"), "dlrow")
 
-    def test3(self):
-        self.assertEqual(Student_Grade_System("preeti",90,80,70), "Average grade: 80.0, Status: Pass")
+    def test_with_zero(self):
+        self.assertEqual(Reverse_String("python"), "nohtyp")
 
 if __name__ == "__main__":
     unittest.main()
