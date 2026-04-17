@@ -13,5 +13,3 @@
 # while i>=0:
 #     print(n[i],end="")
 #     i-=1
-n = int(input())
-for i in range(n):
